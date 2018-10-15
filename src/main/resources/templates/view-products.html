@@ -7,7 +7,7 @@
       
       <script>
          $(document).ready(function(){
-            $.getJSON("http://localhost:9090/products", function(result){
+            $.getJSON("http://localhost:8080/products", function(result){
                $.each(result, function(key,value) {
                   $("#productsJson").append(value.id+" "+value.name+" ");
                }); 
